@@ -1,13 +1,13 @@
 let express = require('express');
 const {sequelize} = require('./models');
-let cors = require('cors')
+
 const config = require('./config/config');
 
 const app = express();
 
 app.use(express.json()); 
 app.use(express.urlencoded({extended: true})); 
-app.use(cors())
+
 
 // var func = require('./routes.js');
 // func(app);
